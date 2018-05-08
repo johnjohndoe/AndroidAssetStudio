@@ -198,7 +198,7 @@ export class LauncherIconGenerator extends BaseGenerator {
       // background layer
       draw: ctx => {
         ctx.scale(mult, mult);
-        values.backColor.setAlpha(1);
+        values.backColor.setAlpha(0);
         ctx.fillStyle = values.backColor.toRgbString();
 
         let targetRect = TARGET_RECTS_BY_SHAPE[values.backgroundShape];
@@ -222,7 +222,7 @@ export class LauncherIconGenerator extends BaseGenerator {
             break;
         }
       },
-      mask: true
+      mask: false
     };
 
     let foregroundLayer = {
