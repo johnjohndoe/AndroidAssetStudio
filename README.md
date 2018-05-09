@@ -1,6 +1,9 @@
 Android Asset Studio
 ====================
 
+## Disclaimer
+This fork has been modified in a way that no background will be added to the generated app launcher icons. The purpose of that is being able to generate a launcher icon with just a drop shadow, which you can then import in Android Studio by right clicking Res -> New -> Image Asset. You can then set the newly generated icon as the foreground and select your own background. That will generate proper adaptive icons, which you can then use in your app.
+
 **[Open the Android Asset Studio](https://romannurik.github.io/AndroidAssetStudio/)**
 
 **[See the older version](https://romannurik.github.io/AndroidAssetStudio/older-version/) if you're having trouble with the new version**
