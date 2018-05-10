@@ -74,7 +74,7 @@ export class LauncherIconGenerator extends BaseGenerator {
           title: 'Foreground',
           maxFinalSize: { w: 720, h: 720 }, // max render size, for SVGs
           defaultValueTrim: 1,
-          defaultValuePadding: .25,
+          defaultValuePadding: .35,
           defaultValueClipart: 'android',
           dropTarget: document.body
         }),
@@ -104,7 +104,7 @@ export class LauncherIconGenerator extends BaseGenerator {
             { id: 'vrect', title: 'Tall rect' },
             { id: 'hrect', title: 'Wide rect' }
           ],
-          defaultValue: 'square',
+          defaultValue: 'circle',
           onChange: newValue => {
             backColorField.setEnabled(newValue != 'none');
             let newEffectsOptions = newValue == 'none'
@@ -120,7 +120,7 @@ export class LauncherIconGenerator extends BaseGenerator {
           title: 'Effect',
           buttons: true,
           options: DEFAULT_EFFECT_OPTIONS,
-          defaultValue: 'none'
+          defaultValue: 'shadow'
         })),
         new studio.TextField('name', {
           title: 'Name',
